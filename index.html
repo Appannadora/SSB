@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Office of Sana Sathish Babu Garu, Member of Parliament, Kakinada
+    </title>
+    <meta
+      name="description"
+      content="Official website of Sana Sathish Babu Garu, Member of Parliament, Kakinada."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&family=Public+Sans:wght@400;600;700&family=Source+Serif+4:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css?v=6" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to main content</a>
+
+    <!-- HEADER: name | links + Contact | reading options + menu button -->
+    <header class="top" id="top">
+      <div class="bar wrap">
+        <nav id="nav" aria-label="Main">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#moments">Moments</a></li>
+            <li><a href="#priorities">Priorities</a></li>
+
+            <li class="nav-cta-item">
+              <a class="btn" href="#connect">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="actions">
+          <div class="access">
+            <button
+              type="button"
+              class="aa"
+              id="accessBtn"
+              aria-expanded="false"
+              aria-controls="accessPanel"
+              aria-label="Reading options"
+            >
+              Aa
+            </button>
+            <div
+              class="panel"
+              id="accessPanel"
+              role="group"
+              aria-label="Reading options"
+              hidden
+            >
+              <button type="button" id="smaller" aria-label="Make text smaller">
+                A−
+              </button>
+              <button type="button" id="larger" aria-label="Make text larger">
+                A+
+              </button>
+              <button type="button" id="contrast" aria-pressed="false">
+                High contrast
+              </button>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="burger"
+            id="burger"
+            aria-expanded="false"
+            aria-controls="nav"
+            aria-label="Open menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- 1. HERO (background photo is set in style.css) -->
+      <div class="hero">
+        <div class="wrap">
+          <img
+            class="emblem"
+            src="assets/emblem.png"
+            alt=""
+            onerror="this.style.display = 'none'"
+          />
+
+          <h1>
+            <span class="first">Sana</span
+            ><span class="last">Sathish Babu</span>
+          </h1>
+        </div>
+      </div>
+
+      <!-- 2. ABOUT (navy block 1) -->
+      <section id="about" class="statement">
+        <div class="wrap">
+          <span class="tag">About</span>
+          <h2>Empowering People. Inspiring Dreams. Building Swarnandhra.</h2>
+          <p class="lead">
+            Member of Parliament, Rajya Sabha | National Vice President, Telugu
+            Desam Party | Honorary Secretary, Andhra Cricket Association |
+            Member, BCCI Infrastructure Committee | Founder, Sana Sathish Babu
+            Foundation | Kakinada, Andhra Pradesh
+          </p>
+          <a class="btn light" href="#priorities">See our priorities</a>
+        </div>
+      </section>
+
+      <!-- 3. VIDEO CAROUSEL (videos are listed in main.js) -->
+      <section id="moments" class="moments">
+        <h2 class="sr-only">
+          Moments That Matter: Progress That Moves Us Forward
+        </h2>
+
+        <div
+          class="stage"
+          id="stage"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Videos of the MP's work"
+        >
+          <video id="player" muted playsinline preload="metadata"></video>
+          <div class="shade"></div>
+
+          <div class="cap" aria-live="polite">
+            <strong id="capTitle"></strong>
+          </div>
+
+          <div class="bl">
+            <span id="capText"></span>
+            <a class="sq" href="#connect" aria-label="Contact the MP's office"
+              >→</a
+            >
+          </div>
+
+          <div class="ctrl" role="group" aria-label="Video controls">
+            <button type="button" id="prev" aria-label="Previous video">
+              ←
+            </button>
+            <button type="button" id="toggle" aria-label="Pause video">
+              ❚❚
+            </button>
+            <button type="button" id="next" aria-label="Next video">→</button>
+            <button
+              type="button"
+              id="sound"
+              aria-label="Turn sound on"
+              aria-pressed="false"
+            >
+              🔇
+            </button>
+          </div>
+
+          <div
+            class="dots"
+            id="dots"
+            role="group"
+            aria-label="Choose a video"
+          ></div>
+        </div>
+      </section>
+
+      <!-- 4. PRIORITIES -->
+
+      <section id="priorities" class="priorities">
+        <div class="wrap">
+          <div class="priorities-heading">
+            <span class="tag">OUR PRIORITIES</span>
+            <h2>Focused on people.</h2>
+            <p>Driven by progress.</p>
+          </div>
+
+          <div class="pcols">
+            <article class="pcol">
+              <div class="pimg">
+                <img
+                  src="assets/farmers.jpg"
+                  alt="Farmer working in a field"
+                  loading="lazy"
+                />
+                <span class="pnumber">01</span>
+              </div>
+              <div class="pcopy">
+                <span class="picon">01</span>
+                <h3>Farmers</h3>
+                <p>
+                  Supporting our farmers through better facilities, sustainable
+                  agriculture and improved opportunities.
+                </p>
+              </div>
+            </article>
+
+            <article class="pcol">
+              <div class="pimg">
+                <img
+                  src="assets/jobs.jpg"
+                  alt="Young people building their careers"
+                  loading="lazy"
+                />
+                <span class="pnumber">02</span>
+              </div>
+              <div class="pcopy">
+                <span class="picon">02</span>
+                <h3>Jobs & Skills</h3>
+                <p>
+                  Skill training, startup support and pathways to employment
+                  through the Skills, Startup & Bharat Hub in Kakinada.
+                </p>
+              </div>
+            </article>
+
+            <article class="pcol">
+              <div class="pimg">
+                <img
+                  src="assets/fishermens.jpg"
+                  alt="Fisherman working near the coast"
+                  loading="lazy"
+                />
+                <span class="pnumber">03</span>
+              </div>
+              <div class="pcopy">
+                <span class="picon">03</span>
+                <h3>Fishermen</h3>
+                <p>
+                  Promoting better facilities, fair support and sustainable
+                  livelihoods for coastal communities.
+                </p>
+              </div>
+            </article>
+
+            <article class="pcol">
+              <div class="pimg">
+                <img
+                  src="assets/cricket.jpg"
+                  alt="Sports and youth development"
+                  loading="lazy"
+                />
+                <span class="pnumber">04</span>
+              </div>
+              <div class="pcopy">
+                <span class="picon">04</span>
+                <h3>Sports</h3>
+                <p>
+                  Supporting sporting talent, encouraging participation and
+                  creating opportunities for young athletes.
+                </p>
+              </div>
+            </article>
+
+            <article class="pcol">
+              <div class="pimg">
+                <img
+                  src="assets/roads.jpg"
+                  alt="Road infrastructure"
+                  loading="lazy"
+                />
+                <span class="pnumber">05</span>
+              </div>
+              <div class="pcopy">
+                <span class="picon">05</span>
+                <h3>Infrastructure</h3>
+                <p>
+                  Working towards improved roads, better connectivity and
+                  stronger infrastructure across the region.
+                </p>
+              </div>
+            </article>
+
+            <article class="pcol">
+              <div class="pimg">
+                <img
+                  src="assets/education.jpg"
+                  alt="Healthcare professional assisting a patient"
+                  loading="lazy"
+                />
+                <span class="pnumber">06</span>
+              </div>
+              <div class="pcopy">
+                <span class="picon">06</span>
+                <h3>Education & Healthcare</h3>
+                <p>
+                  Promoting accessible Education & healthcare services and
+                  better health facilities for every community.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. UPDATES -->
+
+      <!-- 6. CONNECT -->
+      <section id="connect" class="connect">
+        <div class="wrap">
+          <span class="tag">Stay connected</span>
+          <h2>Your concerns matter.</br>Reach out to our office</h2>
+          <p class="lead">Call, message or write. We reply to every request.</p>
+          <div class="contact-list">
+            <a class="btn" href="tel:+910000000000"
+              >Call : 9014707756</a
+            >
+            <a class="btn line" href="https://wa.me/910000000000"
+              >Message on WhatsApp : 9014707756</a
+            >
+            <a class="btn line" href="mailto:office@example.com"
+              >Email : sathish.kkdbabu@gmail.com</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER (navy block 2) -->
+
+    <footer class="site-footer">
+      <div class="wrap footer-main">
+        <div class="footer-brand">
+          <span class="footer-label">OFFICIAL WEBSITE</span>
+          <h3>Sana Sathish Babu Garu</h3>
+          <p>Rajya Sabha MP, Kakinada</p>
+        </div>
+
+        <div class="footer-address">
+          <h4>Office Address</h4>
+          <p>Kakinada, Andhra Pradesh, India</p>
+        </div>
+
+        <div class="footer-social">
+          <h4>Connect With Us</h4>
+
+          <div class="social-icons">
+            <a
+              href="https://www.whatsapp.com/channel/0029VbB9BdmFy72HdO18mG2h"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp Channel"
+              title="Join our WhatsApp Channel"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/sanasathishbabu"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/sanasathishbabu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              href="https://www.youtube.com/@SathishbabuSana"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a
+              href="https://x.com/sanasathishbabu"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="wrap">
+          <p>
+            © <span id="footerYear"></span> Sana Sathish Babu Garu. All rights
+            reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back-to-top (appears after the first page) -->
+    <a
+      href="#main"
+      class="to-top"
+      id="toTop"
+      aria-label="Back to top"
+      title="Back to top"
+      >↑</a
+    >
+
+    <script src="main.js?v=6"></script>
+
+    <script>
+      document.getElementById("footerYear").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
